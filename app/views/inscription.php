@@ -3,7 +3,7 @@
  if ($_SERVER["REQUEST_METHOD"] == "POST"){
     require "app/controllers/auth.php";
     register($_POST["username"],$_POST["password1"], $_POST["password2"], $_POST["first_name"],
-     $_POST["last_name"], $_POST["born_date"], $_FILES["avatar"]);
+    $_POST["last_name"], $_POST["born_date"], $_FILES["avatar"]);
 
 
  }

@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,7 @@
     <form action="#" method="post">
         <div class="form-group">
             <input type="text" placeholder="Nom d'utilisateur " require >
-            <input type="text" placeholder="Mot de passe " require>
+            <input type="password" placeholder="Mot de passe " require>
             <button type="submit">Se connecter</button>
         </div>
         
