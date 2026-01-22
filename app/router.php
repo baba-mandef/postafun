@@ -13,8 +13,9 @@ elseif($route === "/connexion"){
     require_once "app/views/connexion.php";
 }elseif($route === "/logout"){
     require "app/controllers/auth.php";
-    logout();
-    
+    logout();   
+}elseif($route === "/profil"){
+    require_once "app/views/show_profil.php";
 }
 else{
     echo "404 Vous etes perdu :(";

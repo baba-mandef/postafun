@@ -11,13 +11,11 @@ function  create_profil($user, $avatar, $born_date, $first_name, $last_name){
 function fetch_profil($user){
     require_once "app/models/base.php";
     $db =db_chain();
-    $query = $db -> prepare("SELECT  first_name,last_name, avatar FROM profil WHERE user= ?");
+    $query = $db -> prepare("SELECT  first_name, last_name, avatar, born_date FROM profil WHERE user= ?");
     $query -> execute(array($user));
     $profil = $query ->fetch();
 
     return $profil;
-
-
 
 }
 

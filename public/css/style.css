@@ -63,3 +63,136 @@
     margin-top: 15px;
     font-size: 14px;
 }
+
+.profil{
+    display: flex;
+}
+
+.avatar-content{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid gray;
+}
+
+.profil-username{
+    font-size: 12px;
+}
+
+.profil-avatar{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-name{
+    font-weight: bold;
+}
+
+.profil-details ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+.profil-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.profil-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 25px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label[for="banner"]{
+    cursor: pointer;
+    background-color: rgb(116, 116, 116);
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    color: #ffff;
+}
+
+.validation input[type="submit"]{
+    background-color: rgb(50, 84, 235);
+    border-radius: 8px;
+    height: 32px;
+    color: #ffff;
+    border: none;
+}
+
+.field textarea{
+    padding-left: 10px;
+}
+
+.validation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.post-creation{
+    width: 40%;
+}
+
+.user-post{
+    width: 90%;
+}
+
+.post-user-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid gray;
+}
+
+.post-header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.post-user h5 {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.post-user span{
+    font-size: 11px;
+    margin: 5px;
+    font-style: italic;
+}
+
+.post-banner{
+    width: 400px;
+    height: 400px;
+}
+
+.post-item{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 3px 2px 4px rgb(184, 180, 180);
+}

@@ -12,10 +12,10 @@
     <div class="navigation">
         <h3>PostaFun</h3>
         <nav class="navbar">
-            
-            <?php 
-              require "app/utils/tools.php";
-              if( is_authenticated()){
+
+            <?php
+            require "app/utils/tools.php";
+            if (is_authenticated()) {
                 $user = $_SESSION["user_info"];
                 $first_name = $user["first_name"];
                 $last_name = $user["last_name"];
@@ -31,7 +31,7 @@
                     </li>
                 </ul>
                 HTML;
-              }else{
+            } else {
                 echo <<<HTML
                 <ul>
                     <li>
@@ -42,12 +42,22 @@
                     </li>
                 </ul>
               HTML;
-              }
+            }
             ?>
-             
         </nav>
     </div>
 
+    <div class="post-container">
+        <?php
+            require_once "app/models/post.php";
+            $posts = fetch_post();
+        ?>
+        <div class="div">
+            <h3><?= $posts['title'] ?></h3>
+            <p><?= $posts['content'] ?></p>
+        </div>
+    </div>
+    
 </body>
 
 </html>

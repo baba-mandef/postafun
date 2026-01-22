@@ -59,7 +59,7 @@ function login($username, $password){
                 $profil = fetch_profil($user["id"]);
                 session_start();
                 $user_info = array("username"=>$username, "first_name"=>$profil["first_name"], 
-                "last_name"=>$profil["last_name"], "avatar"=>$profil["avatar"]);
+                "last_name"=>$profil["last_name"], "avatar"=>$profil["avatar"], "born_date"=>$profil["born_date"]);
 
                 $_SESSION["user_info"]= $user_info;
                 update_last_login($username);
@@ -69,7 +69,7 @@ function login($username, $password){
 
 
 
-                 echo "<script>alert(' Soyer les bienvenues dans votre espace blog personnel  ')</script>";
+                echo "<script>alert(' Soyer les bienvenues dans votre espace blog personnel  ')</script>";
 
             }else{
 
